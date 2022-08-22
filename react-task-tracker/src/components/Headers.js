@@ -1,12 +1,14 @@
 import React from "react";
+import Button from "./Button";
 
 const Header = (props) => {
     return(
-    <h1 style ={headingStyle}>Hello from component, {props.name}</h1>
-    );
+    <header className="header">
+        <h1>Hello from component, {props.name}</h1>
+        <Button/>
+    </header>
+    )
 }
 
-const headingStyle ={
-    color:'red', backgroundColor:'blue'
-}
+
 export default Header;
